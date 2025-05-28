@@ -1,0 +1,604 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    background: linear-gradient(to right, #8C2F99, #B86182);
+}
+
+main {
+    padding-top: 110px;
+    /* Match navbar height */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    z-index: 1000;
+}
+
+/* .logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+} */
+
+.logo a img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+
+}
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    /* gap: 60px; */
+    gap: 3.75vw;
+}
+
+.nav-links button {
+    display: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.book_now {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #8C2F99, #B86182);
+    border-radius: 10px;
+}
+
+
+
+/* nav bar mdeia query */
+@media (max-width: 1245px) {
+    .nav-links {
+        gap: 2.5vw;
+    }
+
+    .logo a img {
+        max-width: 110px;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+    }
+
+    .book_now {
+        width: 110px;
+        height: 30px;
+        border: none;
+        font-size: 1.2rem;
+        color: #fff;
+        background: linear-gradient(to right, #8C2F99, #B86182);
+        border-radius: 10px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .nav-links li a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .book_now {
+        width: 100px;
+        height: 30px;
+        border: none;
+        font-size: 1.1rem;
+        border-radius: 7px;
+    }
+
+    .logo a img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links .book_now {
+        display: block;
+        margin: 20px;
+        width: 80%;
+        margin-top: -10px;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: #4a4a4a;
+        padding-top: 20px;
+        transition: right 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        gap: 30px;
+    }
+
+    .nav-links.active {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links li {
+        padding: 0px 20px;
+        border-bottom: 1px solid #666;
+    }
+
+    .nav-links li a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .nav-links li a:hover {
+        color: #ddd;
+    }
+
+    .logo a img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+}
+
+/* hero section  */
+.hero {
+    background-image: url(./images/eee.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    padding-top: 99px;
+}
+
+.hero-content {
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4.9rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 174px;
+    border-radius: 20px;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+
+}
+
+.hero-content p {
+    font-size: 3rem;
+    width: 70%;
+    height: 254px;
+    margin: 48px auto 0 auto;
+    font-weight: 500;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    margin-top: 60px;
+
+}
+
+.book_app {
+    width: 330px;
+    height: 70px;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(to right, #8C2F99, #B86182);
+    border-radius: 20px;
+}
+
+.view_work {
+    width: 206px;
+    height: 70px;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(to right, #8C2F99, #B86182);
+    border-radius: 20px;
+}
+
+/* hero section media query */
+@media (max-width: 1245px) {
+    .hero-content h1 {
+        width: 60%;
+        font-size: 3.5rem;
+        height: 140px;
+        padding-bottom: 150px;
+    }
+
+    .hero-content p {
+        font-size: 2.3rem;
+    }
+
+    .btn_container {
+        margin-top: -10px;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        width: 55%;
+        font-size: 2.7rem;
+        height: 110px;
+        padding-bottom: 0;
+
+    }
+
+    .hero-content p {
+        font-size: 2.2rem;
+    }
+
+    .btn_container {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 930px) {
+    .hero-content h1 {
+        width: 60%;
+        font-size: 2.7rem;
+        height: 115px;
+        padding-bottom: 0;
+
+    }
+
+    .hero-content p {
+        font-size: 2.2rem;
+        width: 75%;
+    }
+
+    .btn_container {
+        margin-top: 20px;
+    }
+
+    .book_app {
+        width: 310px;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 15px;
+
+    }
+
+    .view_work {
+        width: 186px;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 15px;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .btn_container {
+        gap: 150px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 0;
+    }
+
+    .hero {
+        height: 100vh;
+        padding-top: 150px;
+    }
+
+    .hero-content h1 {
+        width: 70%;
+        font-size: 2.6rem;
+        height: 105px;
+        padding-bottom: 0;
+
+    }
+
+    .hero-content p {
+        font-size: 2rem;
+        width: 75%;
+    }
+
+    .btn_container {
+        margin-top: 20px;
+        gap: 100px;
+    }
+
+    .book_app {
+        width: 220px;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+
+    .view_work {
+        width: 146px;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-content h1 {
+        width: 75%;
+        font-size: 2.5rem;
+        height: 95px;
+        padding-bottom: 0;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        width: 85%;
+        font-size: 2.5rem;
+        height: 95px;
+        padding-bottom: 0;
+
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-content h1 {
+        width: 90%;
+        font-size: 2.4rem;
+        height: 90px;
+        padding-bottom: 0;
+
+    }
+
+    .hero-content p {
+        font-size: 1.8rem;
+        width: 75%;
+    }
+
+    .book_app {
+        width: 210px;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+
+    .view_work {
+        width: 136px;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .hero-content h1 {
+        width: 95%;
+        font-size: 2.3rem;
+        height: 90px;
+        padding-bottom: 0;
+
+    }
+
+    .hero-content p {
+        font-size: 1.7rem;
+        width: 75%;
+    }
+}
+
+@media (max-width: 470px) {
+    .hero-content h1 {
+        width: 85%;
+        font-size: 2.1rem;
+        height: 90px;
+        padding-bottom: 0;
+
+    }
+
+    .hero-content p {
+        font-size: 1.7rem;
+        width: 75%;
+    }
+
+    .btn_container {
+        margin-top: 20px;
+        gap: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .book_app {
+        width: 179px;
+        height: 45px;
+        font-size: 1rem;
+        border-radius: 10.5px;
+    }
+
+    .view_work {
+        width: 113px;
+        height: 45px;
+        font-size: 1rem;
+        border-radius: 10.5px;
+    }
+
+    .btn_container {
+        margin-top: 50px;
+        gap: 70px;
+    }
+
+    .hero-content p {
+        font-size: 2rem;
+        width: 90%;
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        width: 85%;
+        font-size: 3rem;
+        height: 80px;
+        padding-bottom: 0;
+        background: none;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .hero-content p {
+        font-size: 1.8rem;
+        width: 90%;
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        width: 85%;
+        font-size: 2.8rem;
+        height: 80px;
+        padding-bottom: 0;
+        background: none;
+        text-align: left;
+    }
+}
+
+@media (max-width: 375px) {
+    .book_app {
+        width: 169px;
+        height: 45px;
+        font-size: 0.8rem;
+        border-radius: 10.5px;
+    }
+
+    .view_work {
+        width: 103px;
+        height: 45px;
+        font-size: 0.8rem;
+        border-radius: 10.5px;
+    }
+
+    .btn_container {
+        margin-top: 50px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 351px) {
+    .hero-content p {
+        font-size: 1.6rem;
+        width: 90%;
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        width: 85%;
+        font-size: 2.6rem;
+        height: 80px;
+        padding-bottom: 0;
+        background: none;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 321px) {
+    .hero-content p {
+        font-size: 1.6rem;
+        width: 90%;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .hero-content h1 {
+        width: 85%;
+        font-size: 2.5rem;
+        height: 95px;
+        padding-bottom: 0;
+        background: none;
+        text-align: left;
+    }
+
+}
