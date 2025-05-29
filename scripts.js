@@ -18,6 +18,35 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.remove('active');
         });
     });
+
+
+
 });
 
-// Remove the old linkAction function and related code
+// VANTA.BIRDS({
+//     el: "#about",
+//     mouseControls: true,
+//     touchControls: true,
+//     gyroControls: false,
+//     minHeight: 200.00,
+//     minWidth: 200.00,
+//     scale: 1.00,
+//     scaleMobile: 1.00,
+//     backgroundColor: 0x93369b,
+//     backgroundAlpha: 0
+// })
+
+// VANTA.FOG({
+//     el: "#about",
+//     mouseControls: true,
+//     touchControls: true,
+//     gyroControls: false,
+//     minHeight: 1500.00,
+//     minWidth: 200.00,
+//     highlightColor: 0x93359c,
+//     midtoneColor: 0xb76082,
+//     lowlightColor: 0xffffff,
+//     baseColor: 0xa37981,
+//     blurFactor: 0.48,
+//     backgroundAlpha: 0
+// })
