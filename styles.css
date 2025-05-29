@@ -197,17 +197,17 @@ main {
 
     .nav-links li {
         padding: 0px 20px;
-        /* border-bottom: 0.5px dotted white; */
-        background-color: white;
+        border-bottom: 0.5px dotted white;
+        /* background-color: white;
         width: 80%;
-        height: 30px;
+        height: 30px; */
         text-align: center;
         border-radius: 5px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .nav-links li a {
-        color: black;
+        color: white;
         font-size: 16px;
         font-weight: bolder;
         line-height: 30px;
@@ -1074,7 +1074,6 @@ button {
 
 form button {
     width: 100%;
-    padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -1083,6 +1082,8 @@ form button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
 }
 
 /* GALLERY SECTION MEDIA QUERY */
