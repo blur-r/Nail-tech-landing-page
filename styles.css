@@ -203,6 +203,7 @@ main {
     .nav-links li a {
         color: white;
         font-size: 16px;
+        font-weight: bolder;
     }
 
     .nav-links li a:hover {
