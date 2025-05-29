@@ -696,13 +696,14 @@ main {
 /* SERVICE SECTION */
 .service {
     background-color: #B96282;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 
 .service h1 {
     font-size: 3.5rem;
     color: white;
     text-align: center;
+    padding: 50px 0;
 }
 
 .service-container {
@@ -816,7 +817,7 @@ main {
 
     .service-item {
         width: 181px;
-        height: 275px;
+        height: 280px;
         border-radius: 23.4px;
         gap: 7px;
         padding: 13px 11px 13px 11px;
@@ -836,3 +837,45 @@ main {
         font-size: 0.9rem;
     }
 }
+
+/* GALLERY SECTION */
+
+.gallery {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.gallery-btn {
+    display: flex;
+    width: 930px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 460px;
+    height: 32px;
+    border-radius: 20px;
+}
+
+.btn-active {
+    background: linear-gradient(to right, #8C2F99, #B86182);
+    color: white;
+
+}
+
+/* GALLERY SECTION MEDIA QUERY */
