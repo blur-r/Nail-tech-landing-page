@@ -225,7 +225,7 @@ main {
     background-size: cover;
     background-position: center;
     height: 90vh;
-    padding-top: 99px;
+    padding-top: 89px;
 }
 
 .hero-content {
@@ -245,18 +245,19 @@ main {
 }
 
 .hero-content p {
-    font-size: 3rem;
+    font-size: 2.9rem;
     width: 70%;
     height: 254px;
     margin: 48px auto 0 auto;
     font-weight: 500;
+    text-align: center;
 }
 
 .btn_container {
     display: flex;
     justify-content: center;
     gap: 250px;
-    margin-top: 60px;
+    margin-top: 50px;
 
 }
 
@@ -665,7 +666,7 @@ main {
 }
 
 .last-p {
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.5px solid white;
     font-weight: bold;
     font-style: italic;
 }
@@ -702,12 +703,10 @@ main {
 }
 
 .service-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(424px, 1fr));
-    place-items: center;
-    row-gap: 25px;
-    column-gap: 0;
-    padding: 30px 10.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
 .service-item {
@@ -766,13 +765,6 @@ main {
 
 /* ABOUT SECTION MEDIA QUERY */
 @media (max-width: 1500px) {
-    .service-container {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        row-gap: 25px;
-        column-gap: 0;
-        padding: 30px 8rem;
-    }
-
     .service-item {
         width: 350px;
         height: 497px;
@@ -795,13 +787,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    .service-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        row-gap: 25px;
-        column-gap: 0;
-        padding: 30px 2rem;
-    }
-
     .service-item {
         width: 300px;
         height: 420px;
@@ -825,12 +810,6 @@ main {
 }
 
 @media (max-width: 425px) {
-    .service-container {
-        grid-template-columns: repeat(auto-fit, minmax(181px, 1fr));
-        row-gap: 17px;
-        column-gap: 0;
-        padding: 30px 0.3rem;
-    }
 
     .service-item {
         width: 181px;
@@ -851,6 +830,6 @@ main {
     }
 
     .service-text {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
