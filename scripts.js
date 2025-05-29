@@ -23,18 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// VANTA.BIRDS({
-//     el: "#about",
-//     mouseControls: true,
-//     touchControls: true,
-//     gyroControls: false,
-//     minHeight: 200.00,
-//     minWidth: 200.00,
-//     scale: 1.00,
-//     scaleMobile: 1.00,
-//     backgroundColor: 0x93369b,
-//     backgroundAlpha: 0
-// })
+VANTA.BIRDS({
+    el: "#about",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x93369b,
+    backgroundAlpha: 0
+})
 
 // VANTA.FOG({
 //     el: "#about",
