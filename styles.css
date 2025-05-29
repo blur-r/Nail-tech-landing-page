@@ -245,7 +245,7 @@ main {
 }
 
 .hero-content p {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
     width: 70%;
     height: 254px;
     margin: 48px auto 0 auto;
@@ -257,7 +257,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 250px;
-    margin-top: 50px;
+    margin-top: 40px;
 
 }
 
@@ -508,8 +508,11 @@ main {
     }
 
     .btn_container {
-        margin-top: 50px;
-        gap: 70px;
+        margin-top: 30px;
+        gap: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero-content p {
