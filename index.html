@@ -28,7 +28,8 @@
                 <li><a class="nav-link" href="#contact">CONTACT</a></li>
                 <button class="book_now">Book Now</button>
             </ul>
-            <button class="book_now">Book Now</button>
+            <button class="book_now"><a href="#contact" style="text-decoration: none; color: white;">Book
+                    Now</a></button>
         </nav>
     </header>
 
@@ -41,8 +42,10 @@
                     look as expensive as you feel.
                 </p>
                 <div class="btn_container">
-                    <button class="view_work">GALLERY</button>
-                    <button class="book_app">BOOK AN APPOINTMENT</button>
+                    <button class="view_work"><a href="#gallery"
+                            style="text-decoration: none; color: white;">GALLERY</a></button>
+                    <button class="book_app"><a href="#contact" style="text-decoration: none; color: white;">BOOK AN
+                            APPOINTMENT</a></button>
                 </div>
 
             </div>
@@ -124,14 +127,24 @@
         <section class="gallery" id="gallery">
             <h1>Gallery</h1>
             <div class="gallery-btn">
-                <button class="btn-active">ACRYLIC</button>
-                <button>GEL</button>
+                <button id="acrylicBtn" onclick="showGallery('acrylic')">Acrylic</button>
+                <button id="gelBtn" onclick="showGallery('gel')">Gel</button>
+            </div>
+            <div class="gallery-img" id="gallery-img"></div>
+            <div class="modal" id="modal">
+                <span class="close" onclick="closeModal()">×</span>
+                <span class="prev" onclick="changeImage(-1)">❮</span>
+                <div class="modal-content">
+                    <img id="expandedImage" src="" alt="Expanded Image">
+                </div>
+                <span class="next" onclick="changeImage(1)">❯</span>
             </div>
         </section>
 
         <section class="contact" id="contact">
             <h1>Contact</h1>
-            <form class="contact-form">
+            <form target="_blank" class="contact-form" action="https://formsubmit.co/13850e655a0230c83bd9ae0a0e53a757"
+                method="POST">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -194,6 +207,7 @@
     <script src="three.r134.min.js"></script>
     <!-- <script src="vanta.fog.min.js"></script> -->
     <script src="vanta.birds.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scripts.js"></script>
 
 
