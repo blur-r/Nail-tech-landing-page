@@ -78,7 +78,7 @@ main {
 }
 
 .nav-links li a:hover {
-    color: #007bff;
+    color: #8C2F99;
 }
 
 .book_now {
@@ -89,6 +89,11 @@ main {
     color: #fff;
     background: linear-gradient(to right, #8C2F99, #B86182);
     border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.book_now:hover {
+    background: linear-gradient(to right, #B86182, #8C2F99);
 }
 
 
