@@ -1076,7 +1076,7 @@ button {
 @media (max-width: 425px) {
     button {
         font-size: 1rem !important;
-        height: 20px;
+        height: 26px;
         border-radius: 10px;
         background-color: white;
         color: black;
@@ -1085,7 +1085,12 @@ button {
 
     .gallery-btn {
         height: 30px;
-        border-radius: 15px;
+        border-radius: 10px;
+    }
+
+    .btn-active {
+        padding: 1px;
+        border-radius: 9px;
     }
 
 }
