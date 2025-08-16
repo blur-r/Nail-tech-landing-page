@@ -885,9 +885,14 @@ main {
 
 @media (max-width: 425px) {
 
+    .service-container {
+        gap: 10px;
+    }
+
+
     .service-item {
         width: 181px;
-        height: 280px;
+        height: 290px;
         gap: 7px;
         /* padding: 13px 11px 13px 11px; */
     }
@@ -903,7 +908,8 @@ main {
     }
 
     .service-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        padding: 0 5px;
     }
 }
 
