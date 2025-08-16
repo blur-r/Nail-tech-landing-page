@@ -65,7 +65,8 @@ const images = {
         { a: "./images/gel 4a.png", b: "./images/gel 4b.png" },
         { a: "./images/gel 5a.png", b: "./images/gel 5b.png" },
         { a: "./images/gel 6a.png", b: "./images/gel 6b.png" },
-        { a: "./images/gel 7a.png", b: "./images/gel 7b.png" }
+        { a: "./images/gel 7a.png", b: "./images/gel 7b.png" },
+        { a: "./images/gel 8.jpg" }
     ]
 };
 

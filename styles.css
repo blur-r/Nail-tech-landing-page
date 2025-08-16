@@ -275,26 +275,6 @@ main {
 
 }
 
-/* .book_app {
-    width: 330px;
-    height: 70px;
-    border: none;
-    font-size: 1.2rem;
-    color: #fff;
-    background: linear-gradient(to right, #8C2F99, #B86182);
-    border-radius: 20px;
-}
-
-.view_work {
-    width: 206px;
-    height: 70px;
-    border: none;
-    font-size: 1.2rem;
-    color: #fff;
-    background: linear-gradient(to right, #8C2F99, #B86182);
-    border-radius: 20px;
-} */
-
 .book_app {
     width: 330px;
     height: 70px;
@@ -306,7 +286,6 @@ main {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    /* Smooth transition for zoom */
 }
 
 .book_app::before,
@@ -332,7 +311,6 @@ main {
 
 .book_app:hover {
     transform: scale(1.05);
-    /* Zoom effect on hover (5% larger) */
 }
 
 .view_work {
@@ -346,7 +324,6 @@ main {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    /* Smooth transition for zoom */
 }
 
 .view_work::before,
@@ -372,7 +349,6 @@ main {
 
 .view_work:hover {
     transform: scale(1.05);
-    /* Zoom effect on hover (5% larger) */
 }
 
 @keyframes button42-animation1 {
@@ -721,23 +697,6 @@ main {
 
 /* ABOUT */
 
-/* .about {
-    color: white;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-} */
-
-/* .about {
-    color: white;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-} */
-
-/* Existing styles remain unchanged, update the .about section */
 .about {
     color: white;
     text-align: center;
@@ -826,11 +785,10 @@ main {
 
 .service-item {
     width: 350px;
-    height: 497px;
+    height: 457px;
     color: white;
     box-shadow: 0 6.78px 6.78px 0 #00000025;
-    border-radius: 50px;
-    padding: 28px 25px 28px 25px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -839,13 +797,14 @@ main {
 .service-item img {
     width: 100%;
     height: 307px;
-    border-radius: 33.92px 33.92px 67.85px 67.85px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .service-heading {
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
+    padding-top: 5px;
 }
 
 .service-text {
@@ -883,8 +842,7 @@ main {
 @media (max-width: 1500px) {
     .service-item {
         width: 350px;
-        height: 497px;
-        border-radius: 50px;
+        height: 457px;
         gap: 10px;
     }
 
@@ -905,15 +863,15 @@ main {
 @media (max-width: 768px) {
     .service-item {
         width: 300px;
-        height: 420px;
-        border-radius: 30px;
+        height: 400px;
         gap: 10px;
+        border-radius: 15px;
     }
 
     .service-item img {
         width: 100%;
         height: 270px;
-        border-radius: 23.92px 23.92px 57.85px 57.85px;
+        border-radius: 15px 15px 0px 0px;
     }
 
     .service-heading {
@@ -930,15 +888,14 @@ main {
     .service-item {
         width: 181px;
         height: 280px;
-        border-radius: 23.4px;
         gap: 7px;
-        padding: 13px 11px 13px 11px;
+        /* padding: 13px 11px 13px 11px; */
     }
 
     .service-item img {
         width: 100%;
         height: 168px;
-        border-radius: 15.35px 15.35px 30.69px 30.69px;
+        /* border-radius: 15.35px 15.35px 30.69px 30.69px; */
     }
 
     .service-heading {
